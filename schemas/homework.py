@@ -6,12 +6,12 @@ class HomeWorkBase(BaseModel):
     description: Optional[str] = "-"
 
 class HomeWorkCreate(HomeWorkBase):
-    pass
+    owner_id: int
 
 class HomeWork(HomeWorkBase):
     id: int
     owner_id: int
 
     class Config:
-        orm_mode: True
+        orm_mode = True
 

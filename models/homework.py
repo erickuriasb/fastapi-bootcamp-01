@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship
 
 from config.db import Base
 
-class Homework(Base):
+class HomeWork(Base):
     __tablename__ = "home_works"
 
     id = Column(Integer, primary_key=True, index=True)

@@ -15,4 +15,4 @@ class User(UserBase):
     home_works: List[HomeWork] = []
 
     class Config:
-        orm_mode: True
+        orm_mode = True
